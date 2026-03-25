@@ -41,20 +41,23 @@ if st.button("Generate Tasklist"):
                 mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
             )
 
-# --- LOGO AT THE BOTTOM ---
-st.markdown(
-    """
-    <div style='text-align: center; margin-top: 50px;'>
-        logo.png
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+
+
+
+
+# --- LOGO UNDER BUTTON ---
+st.markdown("<br>", unsafe_allow_html=True)
+st.image("logo.png", width=150, caption="", output_format="PNG")
+
+
+
+
+
 
             # -----------------------------------------
 # MOJE NOTATKI (Jan)
 #Aktywowanie Pythona w Terminalu:
-#"%USERPROFILE%\AppData\Local\miniconda3\envs\od_zera_do_ai\python.exe" --version
+# "%USERPROFILE%\AppData\Local\miniconda3\envs\od_zera_do_ai\python.exe" --version
 #
 #Potem instalowanie Streamlita:
 #"%USERPROFILE%\AppData\Local\miniconda3\envs\od_zera_do_ai\python.exe" -m pip install streamlit openpyxl
