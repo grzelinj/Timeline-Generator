@@ -25,16 +25,13 @@ if st.button("Generate Tasklist"):
     if uploaded_file is None:
         st.error("Musisz wgrać plik template.xlsx")
     else:
-        # zapis pliku tymczasowego
         template_path = "uploaded_template.xlsx"
         with open(template_path, "wb") as f:
             f.write(uploaded_file.read())
 
-        # generowanie nowego pliku
         vesting_str = vesting_date.strftime("%d/%m/%Y")
         output_name = generate_due_dates(vesting_str, template_path)
 
-        # zwrócenie pliku
         with open(output_name, "rb") as f:
             st.success("✅ Gotowe! Pobierz wygenerowany timeline:")
             st.download_button(
@@ -44,7 +41,15 @@ if st.button("Generate Tasklist"):
                 mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
             )
 
-
+# --- LOGO AT THE BOTTOM ---
+st.markdown(
+    """
+    <div style='text-align: center; margin-top: 50px;'>
+        logo.png
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
             # -----------------------------------------
 # MOJE NOTATKI (Jan)

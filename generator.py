@@ -113,14 +113,23 @@ if __name__ == "__main__":
     
 # -----------------------------------------
 # MOJE NOTATKI (Jan)
+#Otwierasz miniconde i aktywujesz srodowisko:  conda activate od_zera_do_ai
+
+# Wskazanie folderu:
+#cd "C:\Users\grzelinskij\Desktop\JG\od_zera_do_ai\JG apps\Project 1 - Timeline Generator"
+
 #Aktywowanie Pythona w Terminalu:
 #"%USERPROFILE%\AppData\Local\miniconda3\envs\od_zera_do_ai\python.exe" --version
-#
-#Potem instalowanie Streamlita:
-#"%USERPROFILE%\AppData\Local\miniconda3\envs\od_zera_do_ai\python.exe" -m pip install streamlit openpyxl
-#
-#i odpalenie stronki:
-#"%USERPROFILE%\AppData\Local\miniconda3\envs\od_zera_do_ai\python.exe" -m streamlit run app.py
+
+#POTEM TO:
+#cd "C:\Users\grzelinskij\Desktop\JG\od_zera_do_ai\JG apps\Project 1 - Timeline Generator"
+
+# jak zrobisz wszytskie updaty, to pozniej w 
+#git add .
+#git commit -m "update timeline logic"
+#git push
+
+
 # - dodać obsługę wielu template
 # - zintegrować z API EquatePlus?
 # - sprawdzić ścieżkę Pythona
